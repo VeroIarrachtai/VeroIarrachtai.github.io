@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Barra de navegación */
+        nav {
+            background-color: #2e5d34;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Imagen de portada */
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb'); /* Imagen de bosque desde Unsplash */
+            background-size: cover;
+            background-position: center;
+            height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        /* Contenido principal */
+        section {
+            padding: 30px;
+            max-width: 900px;
+            margin: auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-top: -50px;
+            position: relative;
+            z-index: 1;
+            border-radius: 10px;
+        }
+
+        section h2 {
+            color: #2e5d34;
+        }
+
+        footer {
+            background-color: #2e5d34;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Investigación</a></li>
+            <li><a href="#">Publicaciones</a></li>
+            <li><a href="#">CV</a></li>
+            <li><a href="#">Difusión</a></li>
+            <li><a href="#">Divulgación</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Imagen de portada -->
+    <div class="hero">
+        <h1>Bienvenidos a mi página</h1>
+    </div>
+
+    <!-- Contenido principal -->
+    <section>
+        <h2>Home</h2>
+        <p>Este es el inicio de tu página. Aquí puedes escribir una breve introducción sobre ti o tu proyecto.</p>
+        
+        <h2>Investigación</h2>
+        <p>Aquí puedes describir tus líneas de investigación y proyectos actuales.</p>
+
+        <h2>Publicaciones</h2>
+        <p>En esta sección puedes incluir una lista de tus artículos, libros o reportes.</p>
+
+        <h2>CV</h2>
+        <p>Agrega tu currículum o un enlace para descargarlo.</p>
+
+        <h2>Difusión</h2>
+        <p>Incluye aquí tus actividades de difusión académica.</p>
+
+        <h2>Divulgación</h2>
+        <p>Describe tus actividades de divulgación científica.</p>
+
+        <h2>Contacto</h2>
+        <p>Coloca tu correo o redes sociales para que te contacten.</p>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        &copy; 2025 Tu Nombre – Todos los derechos reservados.
+    </footer>
+
+</body>
+</html>
