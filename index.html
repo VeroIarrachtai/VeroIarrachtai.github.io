@@ -54,7 +54,6 @@
             text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
             margin-top: 50px;
         }
-
         .hero h1 {
             font-size: 48px;
             margin: 0;
@@ -85,6 +84,17 @@
             padding: 15px;
             margin-top: 30px;
         }
+
+        /* Animación fade-in */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
     </style>
 </head>
 <body>
@@ -99,7 +109,7 @@
             <li><a href="#difusion">Difusión</a></li>
             <li><a href="#divulgacion">Divulgación</a></li>
             <li><a href="#contacto">Contacto</a></li>
-            <li><a href="#vida paralela a la ciencia">Vida paralela a la ciencia</a></li>
+            <li><a href="#vida-paralela-a-la-ciencia">Vida paralela a la ciencia</a></li>
         </ul>
     </nav>
 
@@ -108,73 +118,70 @@
         <h1>Verónica Reyes-Galindo</h1>
     </div>
 
-<!-- Sección Investigación -->
-<section id="investigacion" class="fade-in">
-  <h2>Investigación</h2>
-  <p class="fade-in">Soy bióloga con un marcado interés en la Genómica de la Conservación, la Adaptación Local, la Ecología Evolutiva y los mecanismos de tolerancia al estrés biótico y abiótico...</p>
-</section>
+    <!-- Sección Investigación -->
+    <section id="investigacion" class="fade-in">
+        <h2>Investigación</h2>
+        <p>Soy bióloga con un marcado interés en la Genómica de la Conservación, la Adaptación Local, la Ecología Evolutiva y los mecanismos de tolerancia al estrés biótico y abiótico...</p>
+    </section>
 
-<!-- Sección Publicaciones -->
-<section id="publicaciones" class="fade-in">    
-  <h2>Publicaciones</h2>
-  <p>Ejemplo de publicaciones...</p>
-</section>
+    <!-- Sección Publicaciones -->
+    <section id="publicaciones" class="fade-in">
+        <h2>Publicaciones</h2>
+        <p>Ejemplo de publicaciones...</p>
+    </section>
 
-<!-- CV -->
-<section id="cv" class="fade-in">      
-  <h2>CV</h2>
-  <p>Falta agregar CV.</p>
-</section>
+    <!-- CV -->
+    <section id="cv" class="fade-in">
+        <h2>CV</h2>
+        <p>Falta agregar CV.</p>
+    </section>
 
-<!-- Difusion -->
-<section id="difusion" class="fade-in">
-  <h2>Difusión</h2>
-  <p>Contenido de difusión...</p>
-</section>
+    <!-- Difusión -->
+    <section id="difusion" class="fade-in">
+        <h2>Difusión</h2>
+        <p>Contenido de difusión...</p>
+    </section>
 
-<!-- Divulgación -->
-<section id="divulgacion" class="fade-in">
-  <h2>Divulgación</h2>
-  <p>Contenido de divulgación...</p>
-</section>
+    <!-- Divulgación -->
+    <section id="divulgacion" class="fade-in">
+        <h2>Divulgación</h2>
+        <p>Contenido de divulgación...</p>
+    </section>
 
-<!-- Contacto -->
-<section id="contacto" class="fade-in">
-  <h2>Contacto</h2>
-  <p>Sígueme y conoce más sobre mi trabajo en redes o enviame un correo.</p>
-</section>
+    <!-- Contacto -->
+    <section id="contacto" class="fade-in">
+        <h2>Contacto</h2>
+        <p>Sígueme y conoce más sobre mi trabajo en redes o envíame un correo.</p>
+    </section>
 
-<!-- Vida paralela a la ciencia -->
-<section id="vida paralela a la ciencia" class="fade-in">
-  <h2>Vida paralela a la ciencia</h2>
-  <p>Disfruto profundamente todo lo relacionado con la ciencia...</p>
-</section>
+    <!-- Vida paralela a la ciencia -->
+    <section id="vida-paralela-a-la-ciencia" class="fade-in">
+        <h2>Vida paralela a la ciencia</h2>
+        <p>Disfruto profundamente todo lo relacionado con la ciencia...</p>
+    </section>
 
-<!-- Pie de página -->
-<footer>
-    &copy; 2025 Verónica Reyes-Galindo – Todos los derechos reservados.
-</footer>
+    <!-- Pie de página -->
+    <footer>
+        &copy; 2025 Verónica Reyes-Galindo – Todos los derechos reservados.
+    </footer>
 
-<!-- Script para la animación -->
-<script>
-  const faders = document.querySelectorAll('.fade-in');
+    <!-- Script para la animación -->
+    <script>
+        const faders = document.querySelectorAll('.fade-in');
+        const appearOptions = { threshold: 0.2 };
 
-  const appearOptions = {
-    threshold: 0.2
-  };
+        const appearOnScroll = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            });
+        }, appearOptions);
 
-  const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll){
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) return;
-      entry.target.classList.add('visible');
-      appearOnScroll.unobserve(entry.target);
-    });
-  }, appearOptions);
-
-  faders.forEach(fader => {
-    appearOnScroll.observe(fader);
-  });
-</script>
+        faders.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+    </script>
 
 </body>
 </html>
