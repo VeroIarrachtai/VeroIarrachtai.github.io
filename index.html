@@ -9,14 +9,14 @@
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
-            scroll-behavior: smooth;
+            scroll-behavior: smooth; /* hace que el scroll sea suave */
         }
 
         /* Barra de navegación */
         nav {
             background-color: #2e5d34;
             padding: 10px 0;
-            position: fixed;
+            position: fixed;   /* mantiene el menú siempre arriba */
             width: 100%;
             top: 0;
             z-index: 10;
@@ -43,7 +43,7 @@
 
         /* Imagen de portada */
         .hero {
-            background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+            background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb'); /* Imagen de bosque desde Unsplash */
             background-size: cover;
             background-position: center;
             height: 350px;
@@ -52,8 +52,9 @@
             justify-content: center;
             color: white;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
-            margin-top: 50px;
+            margin-top: 50px; /* espacio para que no tape el menú fijo */
         }
+
         .hero h1 {
             font-size: 48px;
             margin: 0;
@@ -98,7 +99,7 @@
             <li><a href="#difusion">Difusión</a></li>
             <li><a href="#divulgacion">Divulgación</a></li>
             <li><a href="#contacto">Contacto</a></li>
-            <li><a href="#vida-paralela-a-la-ciencia">Vida paralela a la ciencia</a></li>
+            <li><a href="#vida paralela a la ciencia">Vida paralela a la ciencia</a></li>
         </ul>
     </nav>
 
@@ -107,13 +108,169 @@
         <h1>Verónica Reyes-Galindo</h1>
     </div>
 
-    <!-- Sección Investigación -->
-    <section id="investigacion">
-        <h2>Investigación</h2>
-        <p>Soy bióloga con un marcado interés en la Genómica de la Conservación, la Adaptación Local, la Ecología Evolutiva y los mecanismos de tolerancia al estrés biótico y abiótico...</p>
+<!-- Contenido principal -->
+
+
+<!-- Sección Investigación -->
+  <!-- Sección Investigación con animaciones -->
+<section id="investigacion" class="fade-in">
+  <h2 id="investigacion">Investigación</h2>
+  <p class="slide-in">Soy bióloga con un marcado interés en la Genómica de la Conservación, la Adaptación Local, la Ecología Evolutiva y los mecanismos de tolerancia al estrés biótico y abiótico. Mi proyecto de Maestría y Doctorado se centró en analizar las diferencias intraespecíficas en la tolerancia al daño causado por el ozono troposférico en árboles del Desierto de los Leones, un bosque periurbano de la Ciudad de México.</p>
+
+  <p class="slide-in">Actualmente soy candidata a doctora en el Instituto de Ecología de la UNAM. Cursé la licenciatura en la Facultad de Estudios Superiores Iztacala (UNAM) y realicé mis tesis de Licenciatura, Maestría y Doctorado en el Instituto de Ecología de la misma universidad, bajo la supervisión de la Dra. Alicia Mastretta‑Yanes. Durante la Maestría y el Doctorado, el Dr. Juan Pablo Jaramillo‑Correa fungió como co‑tutor, a ambos agradezco profundamente gran parte de mi formación académica.</p>
+       
+  <p class="slide-in">Haz clic en los logos para conocer más sobre los trabajos donde he colaborado</p>
+
+  <div class="logos">
+    <!-- ORCID -->
+    <a href="https://orcid.org/0000-0003-0688-2203" target="_blank" style="width:150px; height:auto;">
+      <img src="Logos/ORCID-logo.png" alt="ORCID" style="width:150px; height:auto;">
+    </a>
+    <!-- ResearchGate -->
+    <a href="https://www.researchgate.net/profile/Veronica-Reyes-Galindo?ev=hdr_xprf" target="_blank" style="width:150px; height:auto;">
+      <img src="Logos/ResearchGate-logo.png" alt="ResearchGate" style="width:150px; height:auto;">
+    </a>
+    <!-- Google Scholar -->
+    <a href="https://scholar.google.com/citations?hl=es&user=oyoyw-4AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" style="width:150px; height:auto;">
+      <img src="Logos/GoogleAcademico-logo.png" alt="GoogleAcademico" style="width:150px; height:auto;">
+    </a>
+    <!-- GitHub -->
+    <a href="https://github.com/VeroIarrachtai" target="_blank" style="width:150px; height:auto;">
+      <img src="Logos/GitHub-logo.png" alt="GitHub" style="width:150px; height:auto;">
+    </a>
+  </div> 
+</section>
+
+<!-- Sección Publicaciones -->
+<section id="publicaciones">    
+  <h2>Publicaciones</h2>
+
+  <p>
+    Arenas, S., Cruz-Nicolás, J., Giles-Pérez, G., Barrera-Redondo, J., Reyes-Galindo, V., Mastretta-Yanes, A., Aguirre-Planter, E., Eguiarte, L. E., & Jaramillo-Correa, J. P. (2025). Contribution of range-wide and short-scale chemical soil variation to local adaptation in a tropical montane forest tree. <i>Evolutionary Applications, 18(7)</i>, e70116. 
+    <a href="https://doi.org/10.1111/eva.70116" target="_blank">https://doi.org/10.1111/eva.70116</a>
+  </p>
+
+  <p>
+    Flores-Almaraz, V. S., Truong, C., Hernández-Oaxaca, D., Reyes-Galindo, V., Mastretta-Yanes, A., Jaramillo-Correa, J. P., & Salas-Lizana, R. (2024). Foliar mycobiome remains unaltered under urban air-pollution but differentially express stress-related genes. <i>Microbial Ecology, 87(1)</i>, 72. 
+    <a href="https://doi.org/10.1007/s00248-024-02387-y" target="_blank">https://doi.org/10.1007/s00248-024-02387-y</a>
+  </p>
+
+  <p>
+    Reyes-Galindo, V., Jaramillo-Correa, J. P., Shishkova, S., Sandoval-Zapotitla, E., Flores-Ortiz, C. M., Piñero, D., Spurgin, L. G., Martin, C. A., Torres-Jardón, R., Zamora-Callejas, C., & Mastretta-Yanes, A. (2024). Histologic, metabolomic, and transcriptomic differences in fir trees from a peri-urban forest under chronic ozone exposure. <i>Ecology and Evolution, 14(5)</i>, e11343. 
+    <a href="https://doi.org/10.1002/ece3.11343" target="_blank">https://doi.org/10.1002/ece3.11343</a>
+  </p>
+
+  <p>
+    Reyes-Galindo, V., Jaramillo-Correa, J. P., Carrasco Nava, K., De-la-Rosa-González, A. E., Flores Flores, D., Martínez, M., Monroy-De-la-Rosa, L. A., Morelos Zamora, M. Á., Ramírez Morales, B. E., Ramírez Morales, O. T., Rodríguez, M. D. P., Salazar Zamora, M., Zamora Callejas, C., Zamora Callejas, R., Zamora, C., Zamora, T., González-Camacho, V. A., Rebollo, E., Torres-Jardón, R., Wegier, A., & Mastretta-Yanes, A. (2023). Evaluating pollution-related damage and restoration success in urban forests with participatory monitoring and digital tools. <i>Conservation Biology, 37(5)</i>, e14112. 
+    <a href="https://doi.org/10.1111/cobi.14112" target="_blank">https://doi.org/10.1111/cobi.14112</a>
+  </p>
+
+  <p>
+    Ramírez-Rodríguez, G. B., Meneses San-Juan, D., Rico-Becerra, A. I., González-Olvera, J. J., & Reyes-Galindo, V. (2023). Repetitive transcranial magnetic stimulation and fluoxetine reverse depressive-like behavior but with differential effects on Olig2-positive cells in chronically stressed mice. <i>Neuropharmacology, 236</i>, 109567. 
+    <a href="https://doi.org/10.1016/j.neuropharm.2023.109567" target="_blank">https://doi.org/10.1016/j.neuropharm.2023.109567</a>
+  </p>
+
+  <p>
+    Cabrera-Muñoz, E. A., Ramírez-Rodríguez, G. B., Díaz-Yañez, L., Reyes-Galindo, V., Meneses-San Juan, D., & Vega-Rivera, N. M. (2023). Melatonin prevents depression but not anxiety-like behavior produced by the chemotherapeutic agent temozolomide: Implication of doublecortin cells and hilar oligodendrocytes. <i>International Journal of Molecular Sciences, 24(17)</i>, 13376. 
+    <a href="https://doi.org/10.3390/ijms241713376" target="_blank">https://doi.org/10.3390/ijms241713376</a>
+  </p>
+
+</section>
+    
+<!-- CV -->
+  <section id="cv">      
+        <h2 id="cv">CV</h2>
+        <p>Falta agregar CV.</p>
+   </section>
+    
+<!-- Sección Difusion -->
+  <section id="difusion">      
+        <h2 id="difusion">Difusión</h2>
+        <p></p>
+       <p> </p>
+    <div class="logos">
+      <!-- Logo 1 -->
+      <a href="https://mexevol.com" target="_blank" style="width:150px; height:auto;">
+        <img src="Logos/ReMBE-logo.png" alt="Logo ReMBE" style="width:150px; height:auto;">
+      </a>
+    </div>
+   </section>
+    
+<!-- Sección Divulgación -->
+  <section id="divulgacion">
+    <h2 id="divulgacion">Divulgación</h2>
+    <p>La divulgación científica es una parte fundamental de quién soy. Compartir conocimiento en entornos informales me llena de energía y me motiva a seguir aprendiendo. Desde hace varios años soy parte del grupo de divulgación ADN-Aprende y Descubre la Naturaleza, con quienes además de forjar una amistad, también he fortalecido y profesionalizado la manera en que concebimos y desarrollamos proyectos de divulgación.</p>
+
+    </p>Recientemente, también fui parte de la fundacion de la ReMBE, Red Mexicana de Biologia Evolutiva, una red comprometida con la divulgacion de la biología evolutiva. En ella, trabajamos para generar proyectos que faciliten el diálogo entre personas no especializadas y quienes han dedicado parte de su vida a esta disciplina, promoviendo así un intercambio de ideas que enriquezca a toda la comunidad.</p>
+    <div class="logos">
+      <!-- Logo 1 -->
+      <a href="https://adndivulgacioncien.wixsite.com/aprendeydescubre" target="_blank">
+        <img src="Logos/ADN-logo.png" alt="Logo ADN" style="width:150px; height:auto;">
+      </a>
+      <!-- Logo 2 -->
+      <a href="https://mexevol.com" target="_blank" style="width:150px; height:auto;">
+        <img src="Logos/ReMBE-logo.png" alt="Logo ReMBE" style="width:150px; height:auto;">
+      </a>
+    </div>
+  </section>
+
+<!-- Sección Contacto -->
+    <section id="contacto">
+        <h2 id="contacto">Contacto</h2>
+        <p>Sígueme y conoce más sobre mi trabajo en redes o enviame un correo.</p>
+     <div class="redes-sociales">
+<!-- Correo -->
+  <form action="https://formspree.io/f/abcd1234" method="POST">
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+
+    <label for="email">Correo electrónico:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="mensaje">Mensaje:</label><br>
+    <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+
+
+
+<!-- X (Twitter) -->
+    <a href="https://x.com/VeroIarrachtai?t=IsUiwfnEHmbQxkSR690M0w&s=09" target="_blank" style="width:150px; height:auto;">
+      <img src="Logos/X-logo.png" alt="Twitter" style="width:150px; height:auto;">
+    </a>
+
+<!-- Bluesky  -->
+    <a href="https://bsky.app/profile/veroiarrachtai.bsky.social" target="_blank" style="width:150px; height:auto;">
+      <img src="Logos/Bluesky-logo.png" alt="Bluesky" style="width:150px; height:auto;">
+    </a>
+         
+<!-- Instagram -->
+    <a href="https://www.instagram.com/intenta.10_imposible/" target="_blank" style="width:150px; height:auto;">
+      <img src="Logos/Instagram-logo.png" alt="Instagram" style="width:150px; height:auto;">
+    </a>
+    
     </section>
 
-    <!-- Sección Publicaciones -->
-    <section id="publicaciones">
-        <h2>Publicaciones</h2>
-        <p>Ejemplo de publicaciones.
+<!-- Sección Vida paralela a la ciencia -->
+    <section id="vida paralela a la ciencia">
+        <h2 id="vida paralela a la ciencia">Vida paralela a la ciencia</h2>
+        <p>Disfruto profundamente todo lo relacionado con la ciencia, y quizá por eso siempre busco encontrar un vínculo entre mi vida académica y mi vida fuera de los institutos. Me apasiona visitar museos, leer y ver documentales, así como descubrir juegos de mesa y nuevos hobbies.<p>
+
+        <p>También me encanta viajar para explorar nuevos lugares y culturas. Me gusta ver películas y escuchar música, aunque rara vez voy al cine o a conciertos. Me considero una persona ansiosa, pero esa ansiedad me impulsa a intentar comprender mejor el comportamiento de las personas y a mantenerme en constante reflexión.<p>
+
+        <p>Practicar natación y box me ayuda a enfocarme en el presente y a mantener un equilibrio físico y mental. Además, disfruto compartir ideas y colaborar en proyectos que tengan un impacto positivo en los entornos en los que me desarrollo.</p>
+    </section>
+
+
+    
+<!-- Pie de página -->
+    <footer>
+        &copy; 2025 Verónica Reyes-Galindo – Todos los derechos reservados.
+    </footer>
+
+</body>
+</html>
+
+        
